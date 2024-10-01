@@ -22,3 +22,8 @@ var Family = "The Smiths", Dad = "John", Mom = "Diana", //Defining variable Fami
 
 var D = "3+3"; //Defining an expression
 document. write(D);
+
+var Sent1 = "This is the beginning of the string";
+var Sent2 = " and this is the end of the string";
+document.write(Sent1)
++ document.write(Sent2)
