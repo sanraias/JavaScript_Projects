@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Assignment</title>
+</head>
+<body>
+    <h1>JavaScript Functions</h1>
+    <p>This is example shows the syntax of a function, without the use of arrow function syntax.</p>
+    <p id="demo" style="color: brown;"></p>
+
+    <p>This is an example of using the arrow function syntax</p>
+    <p id="demo2" style="color: brown;"></p>
+
+    <p>This is an example of not using the arrow function syntax</p>
+    <p id="demo3" style="color: brown;"></p>
+
+    <h1>Array .Some() Method</h1>
+    <p>The some() method checks if some array values pass a test:</p>
+    <p id="someOver18"></p>
+
+
+    <script>
+        let hello = "";
+        hello = function() {
+            return "Hello World!";
+        }
+        document.getElementById("demo").innerHTML = hello();
+
+        var car;
+        car = (val) => "There are my favourite car brands: " + val;
+        document.getElementById("demo2").innerHTML = car ("Nissan, Honda, and BMW");
+
+        var motorbike;
+        motorbike = function(val) {
+            return "These are my favourite motorbike brands: " + val;
+        }
+        document.getElementById("demo3").innerHTML = motorbike ("Honda, Suzuki, and Ducati");
+
+        
+        const numbers = [45, 4, 9, 16, 25];
+        let someOver18 = numbers.some(someFunction);
+
+        document.getElementById("someOver18").innerHTML = "Some over 18 is " + someOver18;
+
+        function someFunction(value, index, array) {
+            return value > 18;
+        }
+
+
+    </script>
+</body>
+</html>
