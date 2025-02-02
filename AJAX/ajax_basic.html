@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Basic AJAX Demo</title>
+		<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="llama">
+            <h2>WINAMP, WINAMP, WINAMP!</h2>
+            <button type="button" onclick="loadDoc()">Click on me!</button>
+        </div>
+
+		<script type="text/javascript">
+            function loadDoc() {
+                const xhttp = new XMLHttpRequest();
+                xhttp.onload = function() {
+                    document.getElementById("llama").innerHTML = this.responseText;
+                }
+                xhttp.open("GET","content.html");
+                xhttp.send();
+            }			
+		</script>
+    </body>
+</html>
