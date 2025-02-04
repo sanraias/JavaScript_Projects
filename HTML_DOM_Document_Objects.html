@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Document Objects</title>
+</head>
+<body>
+    <h1>Window Document Object</h1>
+    <h2>The URL Property</h2>
+    <p id="document"></p>
+
+    <h2>The Last modified</h2>
+    <p id="last"></p>
+
+    <h2>Scripts</h2>
+    <p id="scripts"></p>
+
+    <h2>Cookies</h2>
+    <p id="cookie"></p>
+    
+
+    <script>
+        let url = window.document.URL;
+        document.getElementById("document").innerHTML = url;
+
+        let last = document.lastModified;
+        document.getElementById("last").innerHTML = last;
+
+        let scripts = document.scripts;
+        document.getElementById("scripts").innerHTML = scripts;
+
+        let cookie = document.cookie;
+        document.getElementById("cookie").innerHTML = cookie;
+    </script>
+</body>
+</html>
