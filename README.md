@@ -1,29 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <style>
-        p {
-            font-family:"Roboto", sans-serif;
-            font-size: 16px;
-        }
-
-        a {
-            color: rgb(13, 136, 202);
-        }
-
-
-
-    </style>
-</head>
-<body>
-    <h1>My JavaScript Projects</h1>
+ <h1>My JavaScript Projects</h1>
     <p>These are files of my JavaScript projects # JavaScript_Projects</p>
 
     <h2>Projects</h2>
@@ -62,13 +37,3 @@
 
     <h3>Calculator</h3>
     <p>A basic 4 function calculator. Users can add, substract, multiply, and divide on a sleek web version of a calculator.</p>
-
-
-
-
-
-
-
-
-</body>
-</html>
