@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON.parse()</title>
+</head>
+<body>
+    <p id="myCar"></p>
+    
+    <script>
+        var car = '{"brand":"Torino","color":"Blue","style":"Coupe","year":1979}';
+        var JSONstring = JSON.parse(car);
+        document.getElementById("myCar").innerHTML = JSONstring.brand + " is color " + JSONstring.color + " and is from year " + JSONstring.year;
+    </script>
+</body>
+</html>
